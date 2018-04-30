@@ -2,13 +2,14 @@
 <html>
 <head>
     <meta charset="utf-8">
-    <title>Weather Visualizations</title>
+    <title>Cloudiness vs. Latitude</title>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="style.css">
 </head>
+
 <body>
     <!-- Navbar -->
     <nav class="navbar navbar-expand-md navbar-light">
@@ -43,17 +44,14 @@
         </div>
         </div>
     </nav>
-    <article>
     <div class="container">
-        
         <div class="row">
             <div class="col-lg-8">
                 <div class="content-box">
-                <h1 class="h">Summary: Latitude vs. Weather</h1>
+                <h1 class="h">Cloudiness</h1>
                 <hr>
-                <img class="img-paragraph" width="300" src="Resources/temperature.png" alt="Graph of Temperature vs. Latitude">
-                <p>The purpose of this project was to analyze weather patterns with respect to latitude. To accomplish this, we used the OpenWeatherMap API to collect information on weather conditions for over 500 randomly selected cities.</p>
-                <p>After assembling the dataset, we used Matplotlib to plot multiple aspects of the weather with respect to latitude. These factors were temperature, cloud cover, wind speed, and humidity. This site provides the source data and visualizations created for this analysis, as well as descriptions of trends observed.</p>
+                <img class="img-paragraph" width="350" src="Resources/clouds.png" alt="Graph of Cloudiness vs. Latitude">
+                <p>Cloudiness does not seem to vary significantly over latitudes, having widely distributed values in all areas. However, the incidence of cloudiness appears to increase moderately past around 40 degrees North. </p>
                 </div> 
             </div>
 
@@ -66,7 +64,7 @@
                     <img class="img-nav-panel" src="Resources/temperature.png">
                 </a>
                 <a href="clouds.html">
-                    <img class="img-nav-panel" src="Resources/clouds.png">
+                    <img class="img-nav-panel img-nav-active" src="Resources/clouds.png">
                 </a>
                 <a href="wind.html">
                     <img class="img-nav-panel" src="Resources/wind.png">
@@ -77,6 +75,6 @@
             </div>
         </div>
     </div>
-    </article>
+    
 </body>
 </html>
